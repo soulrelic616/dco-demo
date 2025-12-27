@@ -1,0 +1,23 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#ad-container {
+	text-align: center;
+	max-width: 80%;
+}
+
+#product-image {
+	max-width: 100%;
+	height: auto;
+	margin-top: 20px;
+}

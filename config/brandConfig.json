@@ -1,0 +1,37 @@
+{
+    "brand": "ChillZone",
+    "defaultProduct": "ChillZone Original",
+    "weatherStates": {
+        "hot": {
+            "headline": "Cool down fast",
+            "subline": "Ice-cold refreshment"
+        },
+        "mild": {
+            "headline": "Refresh your day",
+            "subline": "Smooth energy, no crash"
+        },
+        "cold": {
+            "headline": "A warmer kind of energy",
+            "subline": "Balanced energy lift"
+        },
+        "rain": {
+            "headline": "Lift your mood",
+            "subline": "Rain or shine"
+        },
+        "unknown": {
+            "headline": "Stay refreshed",
+            "subline": "Any time, anywhere"
+        }
+    },
+    "timeOfDayOverrides": {
+        "morning": {
+            "subline": "Start your day strong"
+        },
+        "afternoon": {
+            "subline": "Power through the day"
+        },
+        "evening": {
+            "subline": "Energy when you need it"
+        }
+    }
+}
