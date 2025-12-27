@@ -4,7 +4,7 @@ const weatherApi = 'https://example.com/api/weather';
 const timeApi = 'https://example.com/api/time';
 const productApi = 'https://example.com/api/product';
 
-const fallbackImageUrl = 'fallback.jpg'; // Static backup image
+const fallbackImageUrl = 'fallback.png'; // Static backup image
 
 // This function acts as a 'messenger' that goes out to the internet to grab 
 // specific pieces of data (like weather or price) from a provided web address.
