@@ -53,13 +53,20 @@ function updateCreative(config, { weather, time, product }) {
 
     const weatherKey = weather?.condition?.toLowerCase() || 'unknown';
     const timeOfDay = getTimeOfDay(time?.hour || new Date().getHours());
+    
+    // --- DATA ATTRIBUTE LOGIC ---
+    // We identify the 'region' (e.g., London) and update the <body> tag.
+    // This allows your CSS to change styles (like colors) based on location or time.
+    const region = product?.region || config.defaultRegion || 'local';
+    document.body.setAttribute('data-local', region.toLowerCase());
+    document.body.setAttribute('data-time', timeOfDay);
+    // ----------------------------
 
     const weatherData = config.weatherStates[weatherKey] || config.weatherStates.unknown;
     const timeOverride = config.timeOfDayOverrides?.[timeOfDay];
 
     const finalSubline = timeOverride?.subline || weatherData.subline;
     const productName = product?.name || config.defaultProduct;
-    const region = product?.region || 'your area';
     const imageUrl = product?.image || fallbackImageUrl;
 
     container.headline.textContent = weatherData.headline;

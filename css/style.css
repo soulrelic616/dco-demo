@@ -11,6 +11,18 @@ body, html {
 	justify-content: center;
 }
 
+/* Default daytime style */
+body {
+    background: #87CEEB;
+    color: black;
+}
+
+/* Automatically switch to dark mode when the script sets data-time="evening" */
+body[data-time="evening"] {
+    background: #2c3e50;
+    color: white;
+}
+
 #ad-container {
 	text-align: center;
 	max-width: 80%;
