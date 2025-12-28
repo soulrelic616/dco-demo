@@ -16,6 +16,17 @@ body, html {
 	max-width: 80%;
 }
 
+#headline {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#subtext {
+    font-size: 1.2em;
+    color: white;
+}
+
 #product-image {
 	max-width: 100%;
 	height: auto;

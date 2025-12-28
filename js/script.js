@@ -10,7 +10,7 @@ const fallbackImageUrl = 'fallback.png'; // Static backup image
 // specific pieces of data (like weather or price) from a provided web address.
 async function fetchData(url, fallback) {
     try {
-        const res = await fetch(url);
+        const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) throw new Error(`Fetch failed: ${url}`);
         return await res.json();
     } catch (err) {
